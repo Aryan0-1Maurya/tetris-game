@@ -1,0 +1,135 @@
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Aclonica");
+
+* {
+   box-sizing: border-box;
+   user-select: none;
+   margin: 0;
+   padding: 0;
+   -webkit-user-select: none;
+   color: #ccc;
+   font-family: 'Aclonica';
+   font-size: 1em;
+   font-weight: lighter;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   background: #003380;
+}
+
+#game-scene {
+   width: 100%;
+   height: 100%;
+   max-width: 400px;
+   max-height: 600px;
+
+}
+
+#game-area {
+    /*filter:blur(10px);*/
+   transition: 1s;
+}
+
+#menu {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   top: -100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: 1s;
+}
+
+.Scene {
+   width: 100%;
+   height: 100%;
+}
+
+.Box {
+   position: relative;
+   top: -100%;
+   padding: 10px;
+}
+
+canvas {
+   width: 100%;
+   height: 100%;
+   padding: 5px;
+}
+
+
+.MenuBtn {
+   width: 80%;
+   padding: 5px;
+   margin: 5px;
+   outline: none;
+   border: 2px solid #222;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: 0.5s;
+}
+
+
+.MenuBtn:hover {
+   border: 2px solid #00aa00;
+   border-radius: 10px;
+   background-color: rgba(0, 190, 0, 0.5);
+   font-weight: bolder;
+}
+
+svg {
+   fill: #ccc;
+}
+
+#toolbar {
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+}
+
+.TransparentBtn {
+   background: teal;
+   outline: none;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/

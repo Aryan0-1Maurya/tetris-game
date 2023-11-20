@@ -1,0 +1,143 @@
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Aryan Maurya" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta
+      name="description"
+      content="This is tetris game build for your imporove thing skill in this domain by aryan maurya enjoy your game"
+    />
+    <meta
+      name="keywords"
+      content="Tetris, puzzle game, block game, classic game, tile-matching, strategy game, falling blocks, retro game, addictive gameplay, gaming, entertainment, high score challenge, spatial awareness, reflexes, nostalgic game"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script>
+      console.log = () => {};
+      console.error = () => {};
+      onerror = () => {
+        console = null;
+        return true;
+      };
+    </script>
+    <script type="Mirielle/Shader" id="fragment-shader-2d">
+      precision mediump float;
+
+      uniform sampler2D u_texture;
+      varying vec2 v_texCoord;
+
+      void main() {
+          gl_FragColor = texture2D(u_texture, v_texCoord);
+      }
+    </script>
+    <script type="Mirielle/Shader" id="fragment2-shader-2d">
+      precision mediump float;
+
+      void main() {
+          gl_FragColor = vec4(0, 0, 0, 0.3);
+      }
+    </script>
+    <title>Tetris | Game</title>
+  </head>
+  <body>
+    <section id="game-scene">
+      <div class="Scene" id="game-area">
+        <canvas id="gl"></canvas>
+        <div class="Box Scene" id="toolbar">
+          <div style="width: 80%">
+            <p id="score-text" class="info-txt"></p>
+            <p id="level-text" class="info-txt"></p>
+          </div>
+          <button
+            class="TransparentBtn"
+            id="TransparentBtn"
+            style="z-index: 200"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="M16 37.85v-28l22 14Zm3-14Zm0 8.55 13.45-8.55L19 15.3Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <section id="menu">
+        <img src="https://i.ibb.co/W5NGNHq/tet.png" />
+        <button class="MenuBtn" id="playBtn">PLay</button>
+        <button class="MenuBtn" id="controlsBtn">How To Play</button>
+        <button class="MenuBtn" id="aboutBtn">About</button>
+      </section>
+    </section>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "Welcome All the best from Developer",
+        showConfirmButton: false,
+        timer: 1800,
+        showClass: {
+          popup: `
+       animate__animated
+       animate__fadeInUp
+       animate__faster
+     `,
+        },
+        hideClass: {
+          popup: `
+       animate__animated
+       animate__fadeOutDown
+       animate__faster
+     `,
+        },
+      });
+    </script>
+    <audio
+      src="https://www.dropbox.com/s/30leoceuyqo7zja/Tetris%2099%20-%20Main%20Theme.mp3?dl=1"
+      id="music"
+      style="display: none"
+    ></audio>
+    <img
+      src="https://i.ibb.co/ZTzBSVh/tetris.png"
+      crossorigin="anonymous"
+      style="display: none"
+      id="textureImg"
+    />
+  </body>
+</html>
+
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
